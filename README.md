@@ -74,6 +74,40 @@ ou “este valor pertence ao intervalo dos short
 int”. Use apenas o operador condicional (?)
 
 
+### Exercício 4: Operações com valores de ponto flutuante
+
+<p>Escreva um programa que:
+
+<p><b>a.</b> Declare três variáveis de tipo double, vamos chamar de x, y e z
+mas você pode escolher outro identificador se achar mais apropriado;<p>
+<p><b>b.</b> Peça ao usuário para digitar dois números de ponto flutuante,
+obtenha-os da entrada padrão, usando cin, e atribua os valores
+digitados às variáveis x e y respectivamente;<p>
+
+<p><b>c.</b> Considerando que x e y são coordenadas num plano cartesiano,
+identifique em que lado da curva f(x) = 5x + 2 se encontra (esquerda,
+direita ou na curva). Imprima o resultado na tela;<p>
+
+<p><b>d.</b> Atividade avançada: Atribua à variável z o valor da distância
+euclidiana do ponto (x, y) ao centro de coordenadas; (distância
+euclidiana se calcula como raiz quadrada de (𝑥2 + 𝑦2), (pesquise na biblioteca padrão
+como determinar a raiz quadrada de um número)<p>
+
+<p><b>e.</b>  Atribua à variável z o produto entre as variáveis x e y, imprima o
+resultado na tela em notação científica;</p>
+
+<p>Escreva um programa que:
+<p><b>a.</b> leia da entrada padrão os valores reais dos coeficientes a, b e c, de um
+polinômio de segundo grau do tipo 𝑝(𝑥) = 𝑎𝑥2 + 𝑏𝑥 + 𝑐, e imprima: i. Se o polinômio tem uma, duas ou nenhuma raiz real (lembre
+das suas aulas de segundo grau qual a condição que define
+qual o número de raízes de um polinômio);
+ii. Se tiver raízes (uma ou duas) imprima o valor das mesmas. No
+exercício anterior você deve ter descoberto como calcular a
+raiz quadrada de um número;
+<p><b>b.</b>Leia da entrada padrão um valor para x e imprima o valor de p(x);
+
+### Exercício 5: Operadores bit a bit
+
 # Autores
 
 - Alan Santos
