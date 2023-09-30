@@ -73,6 +73,7 @@ fornecido, seguido das palavras “e maior que um short int”
 ou “este valor pertence ao intervalo dos short
 int”. Use apenas o operador condicional (?)
 
+
 ### Exercício 4: Operações com valores de ponto flutuante
 
 <p>Escreva um programa que:
