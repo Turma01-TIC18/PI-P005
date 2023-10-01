@@ -1,43 +1,43 @@
 #include <iostream>
-#include <ctype.h>
-#include <cmath>
+#include <iomanip>
+#include <cmath> // Inclua a biblioteca cmath para a função abs
 
 using namespace std;
 
-int main(){
-
+int main() {
     int a, b, c;
 
-    cout << "Digite dois numeros inteiros (seguido de ENTER): " << endl;
-    cin >> a >> b;
+    cout << "Digite um numero inteiro: ";
+    cin >> a;
+    cout << "Digite outro numero inteiro: ";
+    cin >> b;
 
+    // Soma de a e b em formato hexadecimal
     c = a + b;
+    cout << "Soma de a e b em formato hexadecimal: 0x" << hex << c << endl;
 
-    cout << "Resultado da soma de a e b em formato hexadecimal: " << hex << c << endl;
-
+    // Produto de a e b em formato octal
     c = a * b;
+    cout << "Produto de a e b em formato octal: 0" << oct << c << endl;
 
-    cout << "Resultado da soma de a e b em formato octal: " << oct << c << endl;
+    // Módulo da diferença
+    c = abs(a - b);
+    cout << "Modulo da diferença entre a e b: " << c << endl;
 
-    c = a - b;
+    // Divisão de a por b
+    if (b != 0) {
+        c = a / b;
+        cout << "Quociente de a por b: " << c << endl;
+    } else {
+        cout << "A divisao por zero nao eh possível." << endl;
+    }
 
-    (c < 0) ? (cout << "Modulo de a - b: " << -c << endl) : (cout << "Modulo de a - b: " << c << endl);
-
-    c = abs(a-b);
-
-    cout << "Modulo de a - b (com biblioteca nativa do C++): " << c << endl;
-
-    c = (b!=0) ? (a/b) : (-1);
-
-
-    (c==-1 && abs(a)!=abs(b)) ? (cout << "Divisao por 0 nao eh possivel" << endl) : (cout << "Resultado da divisao de a por b: " << c << endl);
-
-    (a % b == 0) ? (cout << "A eh divisivel de forma exata por B" << endl ): (cout << "A nao e divisivel de forma exata por B" << endl);
-
-
-
-
-
+    // Verificar se a é divisível de forma exata por b
+    if (a % b == 0) {
+        cout << "a é divissvel de forma exata por b." << endl;
+    } else {
+        cout << "a nao eh divisivel de forma exata por b." << endl;
+    }
 
     return 0;
 }

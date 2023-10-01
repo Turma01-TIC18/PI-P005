@@ -5,33 +5,34 @@
 using namespace std;
 
 int main() {
-    
     double x, y, z;
 
-    
-    cout << "Digite o valor de x: ";
+    cout << "Digite a coordenada x: ";
     cin >> x;
-    cout << "Digite o valor de y: ";
+    cout << "Digite a coordenada y: ";
     cin >> y;
 
-    
-    double fx = 5 * x + 2;
-
-    
-    if (y > fx) {
-        cout << "O ponto (" << x << ", " << y << ") está acima da curva." << endl;
-    } else if (y < fx) {
-        cout << "O ponto (" << x << ", " << y << ") está abaixo da curva." << endl;
-    } else {
-        cout << "O ponto (" << x << ", " << y << ") está na curva." << endl;
+    // Identificar em que lado da curva se encontra f(x) = 5x + 2
+    double curva = (5 * x) + 2;
+    if (y > curva) {
+        cout << "O ponto (" << x << ", " << y << ") esta acima da curva." << endl;
+    } 
+    else {
+        if (y < curva) {
+            cout << "O ponto (" << x << ", " << y << ") esta abaixo da curva." << endl;
+        }
+        else {
+            cout << "O ponto (" << x << ", " << y << ") esta na curva." << endl;
+        }
     }
 
-    // Calcula a distância euclidiana do ponto (x, y) ao centro de coordenadas
+    // Calcular a distância do ponto (x, y) ao centro
     z = sqrt(x * x + y * y);
+    cout << "Distancia euclidiana ao centro de coordenadas: " << z << endl;
 
-    // Calcula o produto entre x e y e imprime em notação científica
-    double produto = x * y;
-    cout << fixed << setprecision(2) << "O produto entre x e y em notação científica é: " << scientific << produto << endl;
+    // Calcular o produto entre x e y e imprimir em notação científica
+    z = x * y;
+    cout << "Produto de x e y em notacaoo cientifica: " << scientific << z << endl;
 
     return 0;
 }
